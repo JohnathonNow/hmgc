@@ -1,0 +1,418 @@
+[gd_scene load_steps=4 format=3 uid="uid://rfc0oc2oxsh4"]
+
+[ext_resource type="PackedScene" uid="uid://dk58e1f0nwhaj" path="res://balloon.tscn" id="1_7a5hf"]
+[ext_resource type="PackedScene" uid="uid://ba3nwenhshaxe" path="res://restart.tscn" id="2_ci23k"]
+[ext_resource type="PackedScene" uid="uid://lceytlol230c" path="res://undo.tscn" id="3_ri60c"]
+
+[node name="Lvl" type="Node2D"]
+
+[node name="Baloon" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 32)
+
+[node name="Baloon2" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 32)
+
+[node name="Baloon3" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 32)
+
+[node name="Baloon4" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 64)
+
+[node name="Baloon5" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 64)
+
+[node name="Baloon6" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 64)
+
+[node name="Baloon7" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 32)
+
+[node name="Baloon8" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 32)
+
+[node name="Baloon9" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 32)
+
+[node name="Baloon10" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 64)
+
+[node name="Baloon11" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 64)
+
+[node name="Baloon12" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 64)
+
+[node name="Baloon13" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 96)
+
+[node name="Baloon14" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 96)
+
+[node name="Baloon15" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 96)
+
+[node name="Baloon16" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 96)
+
+[node name="Baloon17" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 96)
+
+[node name="Baloon18" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 96)
+
+[node name="Baloon19" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 32)
+
+[node name="Baloon20" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 32)
+
+[node name="Baloon21" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 32)
+
+[node name="Baloon22" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 64)
+
+[node name="Baloon23" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 64)
+
+[node name="Baloon24" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 64)
+
+[node name="Baloon25" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 32)
+
+[node name="Baloon26" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 32)
+
+[node name="Baloon27" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 32)
+
+[node name="Baloon28" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 64)
+
+[node name="Baloon29" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 64)
+
+[node name="Baloon30" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 64)
+
+[node name="Baloon31" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 96)
+
+[node name="Baloon32" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 96)
+
+[node name="Baloon33" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 96)
+
+[node name="Baloon34" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 96)
+
+[node name="Baloon35" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 96)
+
+[node name="Baloon36" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 96)
+
+[node name="Baloon37" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 128)
+
+[node name="Baloon38" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 128)
+
+[node name="Baloon39" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 128)
+
+[node name="Baloon40" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 160)
+
+[node name="Baloon41" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 160)
+
+[node name="Baloon42" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 160)
+
+[node name="Baloon43" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 128)
+
+[node name="Baloon44" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 128)
+
+[node name="Baloon45" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 128)
+
+[node name="Baloon46" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 160)
+
+[node name="Baloon47" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 160)
+
+[node name="Baloon48" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 160)
+
+[node name="Baloon49" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 192)
+
+[node name="Baloon50" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 192)
+
+[node name="Baloon51" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 192)
+
+[node name="Baloon52" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 192)
+
+[node name="Baloon53" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 192)
+
+[node name="Baloon54" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 192)
+
+[node name="Baloon55" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 128)
+
+[node name="Baloon56" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 128)
+
+[node name="Baloon57" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 128)
+
+[node name="Baloon58" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 160)
+
+[node name="Baloon59" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 160)
+
+[node name="Baloon60" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 160)
+
+[node name="Baloon61" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 128)
+
+[node name="Baloon62" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 128)
+
+[node name="Baloon63" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 128)
+
+[node name="Baloon64" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 160)
+
+[node name="Baloon65" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 160)
+
+[node name="Baloon66" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 160)
+
+[node name="Baloon67" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 192)
+
+[node name="Baloon68" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 192)
+
+[node name="Baloon69" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 192)
+
+[node name="Baloon70" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 192)
+
+[node name="Baloon71" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 192)
+
+[node name="Baloon72" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 192)
+
+[node name="Baloon73" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 224)
+
+[node name="Baloon74" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 224)
+
+[node name="Baloon75" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 224)
+
+[node name="Baloon76" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 256)
+
+[node name="Baloon77" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 256)
+
+[node name="Baloon78" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 256)
+
+[node name="Baloon79" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 224)
+
+[node name="Baloon80" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 224)
+
+[node name="Baloon81" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 224)
+
+[node name="Baloon82" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 256)
+
+[node name="Baloon83" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 256)
+
+[node name="Baloon84" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 256)
+
+[node name="Baloon85" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 288)
+
+[node name="Baloon86" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 288)
+
+[node name="Baloon87" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 288)
+
+[node name="Baloon88" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 288)
+
+[node name="Baloon89" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 288)
+
+[node name="Baloon90" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 288)
+
+[node name="Baloon91" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 224)
+
+[node name="Baloon92" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 224)
+
+[node name="Baloon93" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 224)
+
+[node name="Baloon94" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 256)
+
+[node name="Baloon95" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 256)
+
+[node name="Baloon96" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 256)
+
+[node name="Baloon97" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 224)
+
+[node name="Baloon98" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 224)
+
+[node name="Baloon99" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 224)
+
+[node name="Baloon100" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 256)
+
+[node name="Baloon101" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 256)
+
+[node name="Baloon102" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 256)
+
+[node name="Baloon103" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 288)
+
+[node name="Baloon104" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 288)
+
+[node name="Baloon105" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 288)
+
+[node name="Baloon106" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 288)
+
+[node name="Baloon107" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 288)
+
+[node name="Baloon108" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 288)
+
+[node name="Baloon109" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 32)
+
+[node name="Baloon110" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 64)
+
+[node name="Baloon111" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 32)
+
+[node name="Baloon112" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 32)
+
+[node name="Baloon114" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 64)
+
+[node name="Baloon115" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 64)
+
+[node name="Baloon117" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 96)
+
+[node name="Baloon118" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 96)
+
+[node name="Baloon120" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 96)
+
+[node name="Baloon121" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 128)
+
+[node name="Baloon122" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 160)
+
+[node name="Baloon123" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 128)
+
+[node name="Baloon124" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 128)
+
+[node name="Baloon126" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 160)
+
+[node name="Baloon127" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 160)
+
+[node name="Baloon129" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 192)
+
+[node name="Baloon130" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 192)
+
+[node name="Baloon132" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 192)
+
+[node name="Baloon133" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 224)
+
+[node name="Baloon134" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 256)
+
+[node name="Baloon135" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 224)
+
+[node name="Baloon136" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 224)
+
+[node name="Baloon138" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 256)
+
+[node name="Baloon139" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 256)
+
+[node name="Baloon141" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 288)
+
+[node name="Baloon142" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 288)
+
+[node name="Baloon144" parent="." instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 288)
+
+[node name="Restart" parent="." instance=ExtResource("2_ci23k")]
+position = Vector2(32, 480)
+
+[node name="Restart2" parent="." instance=ExtResource("3_ri60c")]
+position = Vector2(480, 480)
