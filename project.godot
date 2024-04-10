@@ -24,7 +24,7 @@ Global="*res://Global.tscn"
 window/size/viewport_width=512
 window/size/viewport_height=512
 window/stretch/mode="canvas_items"
-window/stretch/aspect="keep_width"
+window/stretch/aspect="expand"
 
 [rendering]
 
