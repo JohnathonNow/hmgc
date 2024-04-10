@@ -14,34 +14,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
 
-[node name="Restart2" parent="." instance=ExtResource("3_ri60c")]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -64.0
-offset_right = 0.0
-offset_bottom = 0.0
-grow_horizontal = 0
-grow_vertical = 0
-
-[node name="Restart" parent="." instance=ExtResource("2_ci23k")]
-layout_mode = 1
-anchors_preset = 2
-anchor_left = 0.0
-anchor_top = 1.0
-anchor_right = 0.0
-anchor_bottom = 1.0
-offset_left = 0.0
-offset_top = -64.0
-offset_right = 64.0
-offset_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 0
-
 [node name="CanvasLayer" type="Control" parent="."]
 custom_minimum_size = Vector2(512, 512)
 layout_mode = 1
@@ -487,3 +459,31 @@ position = Vector2(480, 288)
 
 [node name="Baloon144" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
 position = Vector2(416, 288)
+
+[node name="Restart2" parent="." instance=ExtResource("3_ri60c")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Restart" parent="." instance=ExtResource("2_ci23k")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 0
