@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chqprohf122hk"
-path="res://.godot/imported/restart.png-26b7c787948cb57c7b611be1d72180b7.ctex"
+uid="uid://dgx5qbpiavy8g"
+path="res://.godot/imported/icon.svg-ccbf7dbe7be92f2560edec2b5162cbcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://restart.png"
-dest_files=["res://.godot/imported/restart.png-26b7c787948cb57c7b611be1d72180b7.ctex"]
+source_file="res://Balloons/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-ccbf7dbe7be92f2560edec2b5162cbcc.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

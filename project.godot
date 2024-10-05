@@ -11,13 +11,9 @@ config_version=5
 [application]
 
 config/name="HMGC"
-run/main_scene="res://Lvl.tscn"
+run/main_scene="res://Balloons/Lvl.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
-
-[autoload]
-
-Global="*res://Global.tscn"
+config/icon="res://Balloons/icon.svg"
 
 [display]
 
@@ -25,6 +21,10 @@ window/size/viewport_width=512
 window/size/viewport_height=512
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="HMGC"
 
 [rendering]
 

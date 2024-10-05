@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://lceytlol230c"]
+[gd_scene load_steps=3 format=3 uid="uid://ba3nwenhshaxe"]
 
-[ext_resource type="Script" path="res://undo.gd" id="1_kn2hp"]
-[ext_resource type="Texture2D" uid="uid://chqprohf122hk" path="res://restart.png" id="2_7p8uu"]
+[ext_resource type="Script" path="res://Balloons/restart.gd" id="1_2g1p8"]
+[ext_resource type="Texture2D" uid="uid://chqprohf122hk" path="res://Balloons/restart.png" id="1_go37y"]
 
 [node name="Restart" type="Control"]
 custom_minimum_size = Vector2(64, 64)
@@ -17,7 +17,7 @@ offset_right = 32.0
 offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_kn2hp")
+script = ExtResource("1_2g1p8")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -32,4 +32,4 @@ offset_right = 32.0
 offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_7p8uu")
+texture = ExtResource("1_go37y")

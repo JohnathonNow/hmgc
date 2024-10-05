@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dk58e1f0nwhaj"]
 
-[ext_resource type="Script" path="res://balloon.gd" id="1_8bjg6"]
-[ext_resource type="Texture2D" uid="uid://bjdo5nj0p1vdm" path="res://New Piskel.png" id="2_1gxxs"]
+[ext_resource type="Script" path="res://Balloons/balloon.gd" id="1_8bjg6"]
+[ext_resource type="Texture2D" uid="uid://bjdo5nj0p1vdm" path="res://Balloons/New Piskel.png" id="2_1gxxs"]
 
 [node name="Balloon" type="Node2D" groups=["Balloons"]]
 script = ExtResource("1_8bjg6")

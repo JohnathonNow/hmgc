@@ -1,0 +1,492 @@
+[gd_scene load_steps=5 format=3 uid="uid://rfc0oc2oxsh4"]
+
+[ext_resource type="PackedScene" uid="uid://dk58e1f0nwhaj" path="res://Balloons/balloon.tscn" id="1_7a5hf"]
+[ext_resource type="PackedScene" uid="uid://ba3nwenhshaxe" path="res://Balloons/restart.tscn" id="2_ci23k"]
+[ext_resource type="PackedScene" uid="uid://lceytlol230c" path="res://Balloons/undo.tscn" id="3_ri60c"]
+[ext_resource type="PackedScene" uid="uid://clm88lfumo2b4" path="res://Balloons/Global.tscn" id="4_itbj4"]
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+
+[node name="CanvasLayer" type="Control" parent="."]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer"]
+layer = 0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(512, 512)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Balloons" type="Node" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+
+[node name="Baloon" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 32)
+
+[node name="Baloon2" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 32)
+
+[node name="Baloon3" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 32)
+
+[node name="Baloon4" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 64)
+
+[node name="Baloon5" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 64)
+
+[node name="Baloon6" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 64)
+
+[node name="Baloon7" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 32)
+
+[node name="Baloon8" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 32)
+
+[node name="Baloon9" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 32)
+
+[node name="Baloon10" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 64)
+
+[node name="Baloon11" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 64)
+
+[node name="Baloon12" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 64)
+
+[node name="Baloon13" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 96)
+
+[node name="Baloon14" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 96)
+
+[node name="Baloon15" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 96)
+
+[node name="Baloon16" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 96)
+
+[node name="Baloon17" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 96)
+
+[node name="Baloon18" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 96)
+
+[node name="Baloon19" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 32)
+
+[node name="Baloon20" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 32)
+
+[node name="Baloon21" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 32)
+
+[node name="Baloon22" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 64)
+
+[node name="Baloon23" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 64)
+
+[node name="Baloon24" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 64)
+
+[node name="Baloon25" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 32)
+
+[node name="Baloon26" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 32)
+
+[node name="Baloon27" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 32)
+
+[node name="Baloon28" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 64)
+
+[node name="Baloon29" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 64)
+
+[node name="Baloon30" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 64)
+
+[node name="Baloon31" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 96)
+
+[node name="Baloon32" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 96)
+
+[node name="Baloon33" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 96)
+
+[node name="Baloon34" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 96)
+
+[node name="Baloon35" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 96)
+
+[node name="Baloon36" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 96)
+
+[node name="Baloon37" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 128)
+
+[node name="Baloon38" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 128)
+
+[node name="Baloon39" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 128)
+
+[node name="Baloon40" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 160)
+
+[node name="Baloon41" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 160)
+
+[node name="Baloon42" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 160)
+
+[node name="Baloon43" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 128)
+
+[node name="Baloon44" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 128)
+
+[node name="Baloon45" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 128)
+
+[node name="Baloon46" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 160)
+
+[node name="Baloon47" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 160)
+
+[node name="Baloon48" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 160)
+
+[node name="Baloon49" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 192)
+
+[node name="Baloon50" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 192)
+
+[node name="Baloon51" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 192)
+
+[node name="Baloon52" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 192)
+
+[node name="Baloon53" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 192)
+
+[node name="Baloon54" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 192)
+
+[node name="Baloon55" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 128)
+
+[node name="Baloon56" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 128)
+
+[node name="Baloon57" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 128)
+
+[node name="Baloon58" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 160)
+
+[node name="Baloon59" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 160)
+
+[node name="Baloon60" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 160)
+
+[node name="Baloon61" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 128)
+
+[node name="Baloon62" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 128)
+
+[node name="Baloon63" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 128)
+
+[node name="Baloon64" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 160)
+
+[node name="Baloon65" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 160)
+
+[node name="Baloon66" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 160)
+
+[node name="Baloon67" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 192)
+
+[node name="Baloon68" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 192)
+
+[node name="Baloon69" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 192)
+
+[node name="Baloon70" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 192)
+
+[node name="Baloon71" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 192)
+
+[node name="Baloon72" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 192)
+
+[node name="Baloon73" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 224)
+
+[node name="Baloon74" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 224)
+
+[node name="Baloon75" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 224)
+
+[node name="Baloon76" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 256)
+
+[node name="Baloon77" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 256)
+
+[node name="Baloon78" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 256)
+
+[node name="Baloon79" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 224)
+
+[node name="Baloon80" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 224)
+
+[node name="Baloon81" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 224)
+
+[node name="Baloon82" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 256)
+
+[node name="Baloon83" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 256)
+
+[node name="Baloon84" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 256)
+
+[node name="Baloon85" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(128, 288)
+
+[node name="Baloon86" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(160, 288)
+
+[node name="Baloon87" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(192, 288)
+
+[node name="Baloon88" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(32, 288)
+
+[node name="Baloon89" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(64, 288)
+
+[node name="Baloon90" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(96, 288)
+
+[node name="Baloon91" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 224)
+
+[node name="Baloon92" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 224)
+
+[node name="Baloon93" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 224)
+
+[node name="Baloon94" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 256)
+
+[node name="Baloon95" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 256)
+
+[node name="Baloon96" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 256)
+
+[node name="Baloon97" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 224)
+
+[node name="Baloon98" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 224)
+
+[node name="Baloon99" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 224)
+
+[node name="Baloon100" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 256)
+
+[node name="Baloon101" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 256)
+
+[node name="Baloon102" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 256)
+
+[node name="Baloon103" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(320, 288)
+
+[node name="Baloon104" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(352, 288)
+
+[node name="Baloon105" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(384, 288)
+
+[node name="Baloon106" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(224, 288)
+
+[node name="Baloon107" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(256, 288)
+
+[node name="Baloon108" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(288, 288)
+
+[node name="Baloon109" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 32)
+
+[node name="Baloon110" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 64)
+
+[node name="Baloon111" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 32)
+
+[node name="Baloon112" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 32)
+
+[node name="Baloon114" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 64)
+
+[node name="Baloon115" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 64)
+
+[node name="Baloon117" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 96)
+
+[node name="Baloon118" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 96)
+
+[node name="Baloon120" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 96)
+
+[node name="Baloon121" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 128)
+
+[node name="Baloon122" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 160)
+
+[node name="Baloon123" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 128)
+
+[node name="Baloon124" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 128)
+
+[node name="Baloon126" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 160)
+
+[node name="Baloon127" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 160)
+
+[node name="Baloon129" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 192)
+
+[node name="Baloon130" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 192)
+
+[node name="Baloon132" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 192)
+
+[node name="Baloon133" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 224)
+
+[node name="Baloon134" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 256)
+
+[node name="Baloon135" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 224)
+
+[node name="Baloon136" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 224)
+
+[node name="Baloon138" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 256)
+
+[node name="Baloon139" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 256)
+
+[node name="Baloon141" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(448, 288)
+
+[node name="Baloon142" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(480, 288)
+
+[node name="Baloon144" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
+position = Vector2(416, 288)
+
+[node name="Restart2" parent="." instance=ExtResource("3_ri60c")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Restart" parent="." instance=ExtResource("2_ci23k")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 0
+
+[node name="Global" parent="." instance=ExtResource("4_itbj4")]

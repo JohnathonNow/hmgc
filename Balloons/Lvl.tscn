@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://rfc0oc2oxsh4"]
+[gd_scene load_steps=5 format=3 uid="uid://rfc0oc2oxsh4"]
 
-[ext_resource type="PackedScene" uid="uid://dk58e1f0nwhaj" path="res://balloon.tscn" id="1_7a5hf"]
-[ext_resource type="PackedScene" uid="uid://ba3nwenhshaxe" path="res://restart.tscn" id="2_ci23k"]
-[ext_resource type="PackedScene" uid="uid://lceytlol230c" path="res://undo.tscn" id="3_ri60c"]
+[ext_resource type="PackedScene" uid="uid://dk58e1f0nwhaj" path="res://Balloons/balloon.tscn" id="1_7a5hf"]
+[ext_resource type="PackedScene" uid="uid://ba3nwenhshaxe" path="res://Balloons/restart.tscn" id="2_ci23k"]
+[ext_resource type="PackedScene" uid="uid://lceytlol230c" path="res://Balloons/undo.tscn" id="3_ri60c"]
+[ext_resource type="PackedScene" uid="uid://clm88lfumo2b4" path="res://Balloons/Global.tscn" id="4_itbj4"]
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(512, 512)
@@ -487,3 +488,5 @@ offset_right = 64.0
 offset_bottom = 0.0
 grow_horizontal = 1
 grow_vertical = 0
+
+[node name="Global" parent="." instance=ExtResource("4_itbj4")]

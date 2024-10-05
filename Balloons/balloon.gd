@@ -15,6 +15,6 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.is_pressed() and get_local_mouse_position().length() < 16:
-			Global.clicked.emit(self)
+			get_tree().root.get_child(0).get_node("Global").clicked.emit(self)
 			return false
 	return true
