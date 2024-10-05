@@ -1,4 +1,4 @@
-extends Node2D
+class_name Dot extends Node2D
 
 const COLORS = [
 	Color.RED,

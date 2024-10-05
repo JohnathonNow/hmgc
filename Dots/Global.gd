@@ -1,14 +1,15 @@
-extends Node
+extends Node2D
 signal clicked(object)
 signal undo(object)
 signal restart(object)
 var state = []
+var combo = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	clicked.connect(onclick)
 	undo.connect(doundo)
-	restart.connect(dorestart)
+	restart.connect(dorestart)	
 
 func savestate(group="Balloons"):
 	var frame = []
@@ -30,7 +31,7 @@ func loadstate(group="Balloons"):
 	
 func get_object_at(pos, group="Balloons"):
 	for o in get_tree().get_nodes_in_group(group):
-		if o.global_position.distance_to(pos) < 1:
+		if o.global_position.distance_to(pos) < 32:
 			return o
 	return null
 
@@ -62,10 +63,6 @@ func onclick(object):
 			if p and p not in x and p.modulate == object.modulate:
 				x[p] = 1
 				q.push_back(p)
-	savestate()
-	for k in x:
-		k.free()
-	call_deferred("move_down_to")
 
 func dorestart():
 	get_tree().reload_current_scene()
@@ -73,3 +70,21 @@ func dorestart():
 	
 func doundo():
 	loadstate()
+	
+func _physics_process(_delta):
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		var x = get_object_at(get_global_mouse_position())
+		if combo and x and is_instance_of(x, Balloon):
+			var hor = abs(x.global_position.y - combo[-1].global_position.y) < 1 and abs(x.global_position.x - combo[-1].global_position.x) < 65
+			var ver = abs(x.global_position.x - combo[-1].global_position.x) < 1 and abs(x.global_position.y - combo[-1].global_position.y) < 65
+			print(not x in combo, hor, ver)
+			if  x.modulate == combo[0].modulate and (hor or ver) and not x in combo:
+				combo.push_back(x)
+		elif x and not combo:
+			combo.push_back(x)
+	elif combo:
+		savestate()
+		for k in combo:
+			k.free()
+		combo = []
+		call_deferred("move_down_to")

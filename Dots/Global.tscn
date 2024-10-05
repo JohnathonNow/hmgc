@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" path="res://Dots/Global.gd" id="1_jf51j"]
 
-[node name="Global" type="Node"]
+[node name="Global" type="Node2D"]
 script = ExtResource("1_jf51j")
