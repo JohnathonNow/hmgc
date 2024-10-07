@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="HMGC"
-run/main_scene="res://Balloons/Lvl.tscn"
+run/main_scene="res://Menu/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://Balloons/icon.svg"
 
@@ -30,4 +30,4 @@ project/assembly_name="HMGC"
 
 renderer/rendering_method="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
-environment/defaults/default_clear_color=Color(0.258824, 0.6, 1, 1)
+environment/defaults/default_clear_color=Color(0.662745, 0.901961, 1, 1)

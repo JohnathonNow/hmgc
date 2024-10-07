@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://rfc0oc2oxsh4"]
+[gd_scene load_steps=6 format=3 uid="uid://rfc0oc2oxsh4"]
 
 [ext_resource type="PackedScene" uid="uid://dk58e1f0nwhaj" path="res://Balloons/balloon.tscn" id="1_7a5hf"]
 [ext_resource type="PackedScene" uid="uid://ba3nwenhshaxe" path="res://Balloons/restart.tscn" id="2_ci23k"]
+[ext_resource type="PackedScene" uid="uid://c648bap7tq3dg" path="res://Menu/ReturnToMenu.tscn" id="2_jdpxe"]
 [ext_resource type="PackedScene" uid="uid://lceytlol230c" path="res://Balloons/undo.tscn" id="3_ri60c"]
 [ext_resource type="PackedScene" uid="uid://clm88lfumo2b4" path="res://Balloons/Global.tscn" id="4_itbj4"]
 
@@ -461,17 +462,27 @@ position = Vector2(480, 288)
 [node name="Baloon144" parent="CanvasLayer/SubViewportContainer/SubViewport/Balloons" instance=ExtResource("1_7a5hf")]
 position = Vector2(416, 288)
 
-[node name="Restart2" parent="." instance=ExtResource("3_ri60c")]
+[node name="ReturnToMenu" parent="." instance=ExtResource("2_jdpxe")]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -64.0
-offset_right = 0.0
-offset_bottom = 0.0
+offset_left = -84.0
+offset_top = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Restart2" parent="." instance=ExtResource("3_ri60c")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0
+anchor_top = 0.836
+anchor_right = 0.0
+anchor_bottom = 0.836
+offset_left = 0.0
+offset_top = -64.032
+offset_right = 64.0
+offset_bottom = -0.0320129
 grow_horizontal = 0
 grow_vertical = 0
 
