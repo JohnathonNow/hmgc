@@ -11,7 +11,6 @@ var score = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	clicked.connect(onclick)
 	undo.connect(doundo)
 	restart.connect(dorestart)	
 	updateLine()
@@ -48,6 +47,7 @@ func move_down_to(fy=384, grid_size=64, group="Dots"):
 		var o = objs[i]
 		if o.global_position.y < fy and not get_object_at(o.global_position + Vector2(0, grid_size)):
 			o.global_position.y += grid_size
+			o.fall(grid_size)
 			i = 0
 		else:
 			i += 1
@@ -62,20 +62,6 @@ func fill():
 				get_tree().current_scene.get_node("%Dots").add_child(p)
 				p.position = v
 
-func onclick(object):
-	var x = {object: 1}
-	var q = [object]
-	while q:
-		var i = q.pop_back()
-		for p in [
-			get_object_at(i.global_position + Vector2(64, 0)),
-			get_object_at(i.global_position + Vector2(-64, 0)),
-			get_object_at(i.global_position + Vector2(0, 64)),
-			get_object_at(i.global_position + Vector2(0, -64)),
-		]:
-			if p and p not in x and p.modulate == object.modulate:
-				x[p] = 1
-				q.push_back(p)
 
 func dorestart():
 	get_tree().reload_current_scene()
@@ -131,7 +117,7 @@ func _physics_process(_delta):
 			var isok = x.modulate == combo[0].modulate and (hor or ver)
 			if x in combo:
 				var index = combo.find(x)
-				if index == 0 and len(combo) >= 4:
+				if index == 0 and len(combo) >= 4 and isok:
 					isSquare = true
 					combo.push_back(x)
 					updateLine()
