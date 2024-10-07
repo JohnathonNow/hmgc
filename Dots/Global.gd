@@ -123,7 +123,7 @@ func _physics_process(_delta):
 		return
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		var x = get_object_at(%SubViewportContainer.get_local_mouse_position())
-		if x == lastOver:
+		if x == lastOver or isSquare:
 			return
 		if combo and x and is_instance_of(x, Dot):
 			var hor = abs(x.global_position.y - combo[-1].global_position.y) < 1 and abs(x.global_position.x - combo[-1].global_position.x) < 65
@@ -132,7 +132,9 @@ func _physics_process(_delta):
 			if x in combo:
 				var index = combo.find(x)
 				if index == 0 and len(combo) >= 4:
-					square()
+					isSquare = true
+					combo.push_back(x)
+					updateLine()
 				else:
 					combo.resize(index + 1)
 					#if index == len(combo) - 1:
@@ -146,5 +148,9 @@ func _physics_process(_delta):
 			combo.push_back(x)
 		lastOver = x
 	elif combo:
-		kill()
+		if isSquare:
+			square()
+		else:
+			kill()
+		isSquare = false
 		combo = []
