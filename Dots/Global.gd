@@ -1,5 +1,4 @@
 extends Node2D
-signal clicked(object)
 signal undo(object)
 signal restart(object)
 var state = []
@@ -121,10 +120,12 @@ func _physics_process(_delta):
 					isSquare = true
 					combo.push_back(x)
 					updateLine()
+					Input.vibrate_handheld(750, .8)
 				else:
 					combo.resize(index + 1)
 					#if index == len(combo) - 1:
 						#combo.pop_back()
+					Input.vibrate_handheld(500, .2)
 					updateLine()
 			else:
 				if isok:
@@ -132,11 +133,14 @@ func _physics_process(_delta):
 					updateLine()
 		elif x and not combo:
 			combo.push_back(x)
+			Input.vibrate_handheld(500, .4)
 		lastOver = x
 	elif combo:
 		if isSquare:
 			square()
+			Input.vibrate_handheld(750, .9)
 		else:
 			kill()
+			Input.vibrate_handheld(500, .5)
 		isSquare = false
 		combo = []
