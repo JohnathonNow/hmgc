@@ -120,27 +120,28 @@ func _physics_process(_delta):
 					isSquare = true
 					combo.push_back(x)
 					updateLine()
-					Input.vibrate_handheld(750, .8)
+					Input.vibrate_handheld(250, .3)
 				else:
 					combo.resize(index + 1)
 					#if index == len(combo) - 1:
 						#combo.pop_back()
-					Input.vibrate_handheld(500, .2)
+					Input.vibrate_handheld(100, .05)
 					updateLine()
 			else:
 				if isok:
 					combo.push_back(x)
 					updateLine()
+					Input.vibrate_handheld(100, .15)
 		elif x and not combo:
 			combo.push_back(x)
-			Input.vibrate_handheld(500, .4)
+			Input.vibrate_handheld(100, .2)
 		lastOver = x
 	elif combo:
 		if isSquare:
 			square()
-			Input.vibrate_handheld(750, .9)
+			Input.vibrate_handheld(250, .4)
 		else:
 			kill()
-			Input.vibrate_handheld(500, .5)
+			Input.vibrate_handheld(250, .3)
 		isSquare = false
 		combo = []
