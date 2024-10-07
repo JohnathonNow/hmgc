@@ -81,6 +81,7 @@ func kill():
 	if len(combo) > 1:
 			savestate()
 			moves -= 1
+			Input.vibrate_handheld(250, .3)
 			for k in combo:
 				score += 1
 				k.free()
@@ -98,6 +99,7 @@ func square():
 			score += 1
 			o.free()
 	combo = []
+	Input.vibrate_handheld(250, .4)
 	call_deferred("move_down_to")
 	updateLine()
 
@@ -139,9 +141,7 @@ func _physics_process(_delta):
 	elif combo:
 		if isSquare:
 			square()
-			Input.vibrate_handheld(250, .4)
 		else:
 			kill()
-			Input.vibrate_handheld(250, .3)
 		isSquare = false
 		combo = []
