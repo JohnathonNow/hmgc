@@ -24,6 +24,12 @@ jobs:
         distribution: 'temurin'
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
+    - name: Setup environment
+      shell: bash
+      run: |
+        echo "GODOT_ANDROID_KEYSTORE_DEBUG_PATH=./mygame.keystore" >> $GITHUB_ENV
+        echo "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD=android" >> $GITHUB_ENV
+        echo "GODOT_ANDROID_KEYSTORE_DEBUG_USER=android" >> $GITHUB_ENV
     - name: export game
       id: export
       # Use latest version (see releases for all versions)
