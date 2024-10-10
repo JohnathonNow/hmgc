@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdt46kw3al2wr"]
+
+[ext_resource type="Script" path="res://Autobattler/minion.gd" id="1_27xou"]
+[ext_resource type="Texture2D" uid="uid://dgx5qbpiavy8g" path="res://Balloons/icon.svg" id="2_88ffh"]
+
+[node name="Minion" type="Node2D"]
+script = ExtResource("1_27xou")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_88ffh")

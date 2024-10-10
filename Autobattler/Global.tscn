@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl08p7saxxp65"]
+
+[ext_resource type="Script" path="res://Autobattler/global.gd" id="1_0cu0x"]
+
+[node name="Global" type="Node2D"]
+script = ExtResource("1_0cu0x")
