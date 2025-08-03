@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqrta58hqtiam"]
+
+[ext_resource type="PackedScene" uid="uid://bdnifjec2mojc" path="res://Hoard/dot.tscn" id="1_gxxyn"]
+
+[node name="Lvl" type="Node2D"]
+
+[node name="Dot" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(32, 32)
+
+[node name="Dot2" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(66, 63)
+
+[node name="Dot3" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(98, 95)
+
+[node name="Dot4" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(130, 127)
+
+[node name="Dot5" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(162, 159)
+
+[node name="Dot6" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(226, 223)
+
+[node name="Dot7" parent="." instance=ExtResource("1_gxxyn")]
+position = Vector2(194, 191)

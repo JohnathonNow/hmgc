@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdnifjec2mojc"]
+
+[ext_resource type="Script" path="res://Hoard/dot.gd" id="1_n7l2f"]
+[ext_resource type="Texture2D" uid="uid://bjdo5nj0p1vdm" path="res://Balloons/New Piskel.png" id="2_a64sq"]
+
+[node name="Dot" type="Node2D" groups=["Dots"]]
+script = ExtResource("1_n7l2f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_a64sq")
