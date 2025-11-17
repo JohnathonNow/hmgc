@@ -1,11 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://ch3wepevwasu2"]
+[gd_scene load_steps=5 format=3 uid="uid://ch3wepevwasu2"]
 
-[ext_resource type="Script" path="res://Dots/dot.gd" id="1_kf2e0"]
+[ext_resource type="Script" uid="uid://bsxqmp5yq1qfe" path="res://Dots/dot.gd" id="1_kf2e0"]
 [ext_resource type="Texture2D" uid="uid://bjdo5nj0p1vdm" path="res://Balloons/New Piskel.png" id="2_wjuw2"]
+[ext_resource type="Shader" uid="uid://m6yinqp6pa1v" path="res://Dots/dot.gdshader" id="2_yp6xo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_niytd"]
+shader = ExtResource("2_yp6xo")
+shader_parameter/vibrance_boost = 5.0
 
 [node name="Dot" type="Node2D" groups=["Dots"]]
 script = ExtResource("1_kf2e0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 unique_name_in_owner = true
+material = SubResource("ShaderMaterial_niytd")
 texture = ExtResource("2_wjuw2")
