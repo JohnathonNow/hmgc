@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8rohyd5ieffx"]
 
-[ext_resource type="Script" path="res://Menu/BalloonsButton.gd" id="1_cnq16"]
-[ext_resource type="Script" path="res://Menu/DotsButton.gd" id="2_2e0gf"]
+[ext_resource type="Script" uid="uid://dupxgmrns11nl" path="res://Menu/BalloonsButton.gd" id="1_cnq16"]
+[ext_resource type="Script" uid="uid://cx2t5oxpgceti" path="res://Menu/DotsButton.gd" id="2_2e0gf"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

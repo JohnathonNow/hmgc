@@ -112,7 +112,7 @@ func _physics_process(_delta):
 		var x = get_object_at(%SubViewportContainer.get_local_mouse_position())
 		if x == lastOver or isSquare:
 			return
-		if combo and x and is_instance_of(x, Dot):
+		if combo and x and is_instance_of(x, BalloonDot):
 			var hor = abs(x.global_position.y - combo[-1].global_position.y) < 1 and abs(x.global_position.x - combo[-1].global_position.x) < 65
 			var ver = abs(x.global_position.x - combo[-1].global_position.x) < 1 and abs(x.global_position.y - combo[-1].global_position.y) < 65
 			var isok = x.modulate == combo[0].modulate and (hor or ver)
